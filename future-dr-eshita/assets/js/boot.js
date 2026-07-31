@@ -1,0 +1,1 @@
+FutureDr.startBoot=()=>{FutureDr.activateScene('#boot');gsap.from('.device-frame',{scale:.88,opacity:0,duration:1,ease:'expo.out'});gsap.to('#scanList li',{opacity:1,x:18,stagger:.7,duration:.55,ease:'power2.out',onComplete:()=>setTimeout(FutureDr.showReveal,900)})};

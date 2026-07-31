@@ -1,1 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050507">
+  <meta name="description" content="A cinematic Future OS experience for Future Dr. Eshita Yadav, NEET 2027.">
+  <title>Future Dr. Eshita Yadav | NEET 2027</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
 
+  <main class="experience" id="app">
+    <section class="intro scene is-active" id="intro" aria-label="Opening message">
+      <div class="intro__aura"></div>
+      <p class="intro__line" id="introLine">Hey Eshita...</p>
+      <button class="touch-target" id="touchStart" type="button" aria-label="Touch anywhere to begin">
+        <span>Touch Anywhere</span>
+      </button>
+    </section>
+
+    <section class="boot scene" id="boot" aria-label="Future OS boot sequence">
+      <div class="device-frame">
+        <div class="statusbar"><span>FUTURE OS</span><span>NEET 2027</span></div>
+        <div class="boot-core" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="boot-copy">
+          <h1>Future OS</h1>
+          <ul id="scanList">
+            <li>Scanning Dreams...</li>
+            <li>Scanning Dedication...</li>
+            <li>Searching Future...</li>
+            <li>Future Found <span class="heart">❤️</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero scene" id="hero" aria-label="Future Dr. Eshita Yadav reveal">
+      <div class="hero__glow"></div>
+      <p class="eyebrow">The future is being written</p>
+      <h2 class="hero-title"><span>Future</span><span>Dr.</span><span>Eshita Yadav</span></h2>
+      <p class="hero-subtitle"><span id="typed"></span></p>
+      <a class="scroll-cue" href="#journey" aria-label="Continue to journey timeline">Continue</a>
+    </section>
+
+    <section class="content journey" id="journey" aria-label="Journey timeline">
+      <div class="section-heading" data-aos="fade-up">
+        <p>Chapter One</p>
+        <h2>Journey Timeline</h2>
+      </div>
+      <div class="timeline">
+        <article class="milestone" data-aos="fade-up"><span>01</span><h3>Dream</h3><p>A quiet promise made to the heart before the world ever applauds.</p></article>
+        <article class="milestone" data-aos="fade-up"><span>02</span><h3>Late Night Studies</h3><p>Discipline glowing softly beside books, notes, and one brave ambition.</p></article>
+        <article class="milestone" data-aos="fade-up"><span>03</span><h3>NEET 2027</h3><p>The exam becomes a doorway, not a wall, because preparation meets belief.</p></article>
+        <article class="milestone" data-aos="fade-up"><span>04</span><h3>Medical College</h3><p>New corridors, new lessons, and the first steps into a life of healing.</p></article>
+        <article class="milestone" data-aos="fade-up"><span>05</span><h3>White Coat</h3><p>A symbol of grace, responsibility, compassion, and everything earned.</p></article>
+        <article class="milestone" data-aos="fade-up"><span>06</span><h3>Dr. Eshita Yadav</h3><p>The name that once lived in a dream finally stands in the light.</p></article>
+      </div>
+    </section>
+
+    <section class="content gallery-section" aria-label="Memory gallery">
+      <div class="section-heading" data-aos="fade-up"><p>Chapter Two</p><h2>Memory Gallery</h2></div>
+      <div class="gallery">
+        <figure class="memory-card" data-aos="zoom-in"><img src="assets/images/memory1.jpg" alt="Golden study memory"><figcaption>The beginning</figcaption></figure>
+        <figure class="memory-card" data-aos="zoom-in" data-aos-delay="100"><img src="assets/images/memory2.jpg" alt="Moonlit dedication memory"><figcaption>The focus</figcaption></figure>
+        <figure class="memory-card" data-aos="zoom-in" data-aos-delay="200"><img src="assets/images/memory3.jpg" alt="Future medicine memory"><figcaption>The calling</figcaption></figure>
+        <figure class="memory-card" data-aos="zoom-in" data-aos-delay="300"><img src="assets/images/memory4.jpg" alt="Celebration memory"><figcaption>The future</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="content letter-section" aria-label="Letter for Eshita">
+      <div class="letter" data-aos="fade-up">
+        <span class="letter__seal">❤️</span>
+        <p class="letter__kicker">A small letter</p>
+        <h2>Dear Eshita,</h2>
+        <p>Your dream does not need noise to be powerful. It shows up every time you choose one more page, one more revision, one more honest effort.</p>
+        <p>I hope this little world reminds you that your future is not far away. It is being built quietly, beautifully, and with a strength that already looks like a doctor.</p>
+        <p class="signature">Always proud of you.</p>
+      </div>
+    </section>
+
+    <section class="finale" id="finale" aria-label="Final reveal">
+      <div class="coat" aria-hidden="true"><div class="coat__lapel coat__lapel--left"></div><div class="coat__lapel coat__lapel--right"></div><div class="stethoscope"></div></div>
+      <h2>Happy Girlfriend's Day <span>❤️</span></h2>
+      <p>For Future Dr. Eshita Yadav — NEET 2027</p>
+      <button class="replay" id="celebrate" type="button">Celebrate Again</button>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/audio.js"></script>
+  <script src="assets/js/intro.js"></script>
+  <script src="assets/js/boot.js"></script>
+  <script src="assets/js/reveal.js"></script>
+  <script src="assets/js/timeline.js"></script>
+  <script src="assets/js/memories.js"></script>
+  <script src="assets/js/letter.js"></script>
+  <script src="assets/js/finale.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
