@@ -1,0 +1,9 @@
+services:
+  future-dr-eshita:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: future-dr-eshita
+    ports:
+      - "8080:80"
+    restart: unless-stopped

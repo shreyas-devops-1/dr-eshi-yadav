@@ -1,0 +1,1 @@
+@media (max-width:850px){.gallery{grid-template-columns:repeat(2,1fr)}.boot .device-frame{border-radius:30px}.content{padding:80px 20px}}@media (max-width:560px){.gallery{grid-template-columns:1fr}.milestone{padding-left:72px}.letter{padding:34px 24px}.boot-copy{margin-top:260px}.hero-title{font-size:18vw}.statusbar{font-size:.66rem}.intro__line{font-size:14vw}}
